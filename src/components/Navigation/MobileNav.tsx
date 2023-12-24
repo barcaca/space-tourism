@@ -24,7 +24,7 @@ export function MobileNav({
       <BlurredBackground />
       <BlurredBackground />
       <ul
-        className={`flex w-full flex-col gap-8 pl-8 pt-[118px] uppercase text-white ${
+        className={`flex w-full flex-col gap-8 pl-8 pt-[118px] uppercase text-white transition ${
           isOpen ? "fixed" : "hidden"
         }`}
       >
