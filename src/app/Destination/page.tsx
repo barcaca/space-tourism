@@ -29,7 +29,7 @@ export default function Destination() {
           )}
         >
           <Image
-            src={activeDestination.images.png}
+            src={activeDestination.images.webp}
             alt={activeDestination.name}
             fill
             sizes="100%"

@@ -29,7 +29,7 @@ export default function Crew() {
           )}
         >
           <Image
-            src={activeCrew.images.png}
+            src={activeCrew.images.webp}
             alt={activeCrew.name}
             fill
             sizes="100%"
