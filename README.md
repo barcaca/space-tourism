@@ -23,8 +23,8 @@ Este projeto é uma solução para o [Space Tourism no Frontend Mentor](https://
 
 ## 🔗 Links
 
-- Solution URL: [Space Tourism/Frontier Mentor](https://www.frontendmentor.io/solutions/faq-accordionnextjs-tailwinds-xxAnblNETC)
-- Live Site URL: [Vercel App](https://faq-accordion-orcin.vercel.app)
+- Solution URL: [Space Tourism/Frontier Mentor](https://www.frontendmentor.io/solutions/space-tourismnextjstailwind-css-r5HYBy-NFN)
+- Live Site URL: [Vercel App](https://space-tourism-olive.vercel.app)
 
 ## 🚀 Processo
 
