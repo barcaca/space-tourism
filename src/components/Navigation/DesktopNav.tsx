@@ -21,19 +21,21 @@ export function DesktopNav({
       <ul className="flex items-center justify-center gap-9 px-12 uppercase tracking-[.15em] text-white xl:gap-12">
         {navLinks.map((link) => (
           <li
-            className={`z-30 flex gap-3 py-9 font-body hover:border-b-4 hover:border-gray-500 md:text-sm xl:text-base
+            className={`z-30 font-body hover:border-b-4 hover:border-gray-500 hover:text-gray-500 md:text-sm xl:text-base
               ${activePage === link.href ? "border-b-4 border-white  " : ""}`}
             key={link.href}
           >
-            <span className="font-bold md:hidden xl:block">{link.number}</span>
             <Link
               href={link.href}
-              className="hover:text-gray-500"
+              className="flex h-24 gap-3 py-9"
               onClick={() => {
                 handleClick();
                 setActivePage(link.href);
               }}
             >
+              <span className="font-bold md:hidden xl:block">
+                {link.number}
+              </span>
               {link.text}
             </Link>
           </li>

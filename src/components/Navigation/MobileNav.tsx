@@ -30,12 +30,16 @@ export function MobileNav({
       >
         {navLinks.map((link) => (
           <li
-            className={`flex gap-3 font-body tracking-[.15rem]
+            className={`font-body tracking-[.15rem] hover:border-r-4 hover:border-gray-500 hover:text-gray-500
         ${activePage === link.href ? "border-r-4 border-white" : ""}`}
             key={link.href}
           >
-            <span className="font-bold tracking-[.15rem]">{link.number}</span>
-            <Link href={link.href} onClick={handleClick}>
+            <Link
+              href={link.href}
+              onClick={handleClick}
+              className="flex gap-3 "
+            >
+              <span className="font-bold tracking-[.15rem]">{link.number}</span>
               {link.text}
             </Link>
           </li>
