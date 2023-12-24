@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - Space Tourism
 
-## Getting Started
+## 📋 Table of Contents
 
-First, run the development server:
+- [👁️‍🗨️ Overview](#-overview)
+  - [🚀 Desafio](#-desafio)
+  - [🖼️ Screenshot](#️-screenshot)
+- [🔗 Links](#-links)
+- [🚀 Processo](#-processo)
+  - [🛠️ Construído com](#️-construído-com)
+- [🌐 Recursos Úteis](#-recursos-úteis)
+- [👤 Autor](#-autor)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 👁️‍🗨️ Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🚀 Desafio
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este projeto é uma solução para o [Space Tourism no Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 🖼️ Screenshot
 
-## Learn More
+![Screenshot do Projeto](/public//screenshot.png)
 
-To learn more about Next.js, take a look at the following resources:
+## 🔗 Links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Solution URL: [Space Tourism/Frontier Mentor](https://www.frontendmentor.io/solutions/faq-accordionnextjs-tailwinds-xxAnblNETC)
+- Live Site URL: [Vercel App](https://faq-accordion-orcin.vercel.app)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🚀 Processo
 
-## Deploy on Vercel
+### 🛠️ Construído com
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js](https://nextjs.org/) - Framework React
+- [React](https://reactjs.org/) - Biblioteca JavaScript para construção de interfaces de usuário
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitário de baixo nível
+- [Tailwind CSS Merger](https://github.com/dvcrn/tailwindcss-merge) - Ferramenta para mesclar configurações do Tailwind CSS
+- [clsx](https://github.com/lukeed/clsx) - Utilitário para geração de classes de maneira condicional
+- [cva](https://github.com/dvcrn/cva) - Biblioteca para criar valores reativos em aplicações JavaScript/TypeScript
+- [Prettier](https://prettier.io/) - Formatador de código JavaScript e TypeScript
+- HTML5 - Linguagem de marcação para estruturação de conteúdo
+- CSS3 (utilizando Tailwind CSS) - Linguagem de estilo para design e layout
+- Mobile First - Abordagem de design focada em dispositivos móveis
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🌐 Recursos Úteis
+
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Next.js Documentation](https://nextjs.org/docs)
+
+## 👤 Autor
+
+- Frontend Mentor - [@Barcaca](https://www.frontendmentor.io/profile/Barcaca)
+
+## 🎖️ Agradecimentos
+
+Agradeço ao Frontend Mentor por proporcionar desafios práticos.
