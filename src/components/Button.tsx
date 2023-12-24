@@ -31,6 +31,7 @@ export function Button({
           ? "data-[variant='button']:border-0 data-[variant='tabs']:border-b-2 data-[variant='tabs']:border-white data-[variant='button']:bg-white data-[variant='slider']:bg-white data-[variant='tabs']:text-white"
           : "data-[variant='button']:text-white ",
       )}
+      aria-label={`Button ${intent}`}
       {...props}
     >
       {text}
