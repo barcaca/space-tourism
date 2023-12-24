@@ -23,6 +23,7 @@ export function Button({
   return (
     <button
       type="button"
+      role="button"
       onClick={() => onClick(index)}
       className={cn(
         buttonVariant({ intent, className }),
