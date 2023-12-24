@@ -29,7 +29,8 @@ export function Navigation() {
   const handleClick = () => {
     setIsOpen(!isOpen); // Toggles the isOpen state, opening or closing the menu
     setActivePage(pathname); // Updates the activePage state to the current pathname
-    if (window.innerWidth > 768) {
+    if (window.innerWidth >= 768) {
+      // Closes the navigation bar if the window width is greater than or equal to 768px
       setIsOpen(false);
     }
   };

@@ -1,4 +1,4 @@
-import React from "react"; // Core React library
+import React, { useEffect, useRef } from "react"; // Core React library
 import Link from "next/link"; // Link component from Next.js
 import { BlurredBackground } from "./BlurredBackground"; // Custom component
 
@@ -15,8 +15,34 @@ export function MobileNav({
   activePage,
   handleClick,
 }: MobileNavProps) {
+  // Create a ref to store a reference to the navigation element
+  const navRef = useRef<HTMLDivElement>(null);
+
+  // UseEffect to manage click handling for closing the mobile menu
+  useEffect(() => {
+    // Function to handle clicks outside the mobile menu
+    const handleClickOutside = (event: MouseEvent) => {
+      // Check if the click occurred outside the mobile menu element
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        // If clicked outside, call handleClick to close the menu
+        handleClick();
+      }
+    };
+
+    // Add the click event listener when the menu is open
+    if (isOpen) {
+      document.addEventListener("click", handleClickOutside);
+    }
+
+    // Cleanup function to remove the event listener when the component unmounts
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isOpen, handleClick]); // Dependencies for useEffect
+
   return (
     <nav
+      ref={navRef}
       className={`fixed right-0 top-0 h-screen w-64 transition duration-200 ease-linear md:hidden ${
         isOpen ? "translate-x-0" : "translate-x-full"
       }`}
